@@ -22,5 +22,10 @@ class Node {
   }
 }
 
+// Time complexity => O(V + E) where V is the number of nodes in the graph and E is the number of edges connecting those nodes 
+// O(V) because we traverse every vertex and add its name to the array
+// On top of that, at every vertex we iterate through the children's nodes and call the depthFirstSearch function
+// Space complexity => O(V) because we are storing an array of each node's name
+
 // Do not edit the line below.
 exports.Node = Node;
